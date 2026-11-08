@@ -125,9 +125,4 @@ All tests mock the Groq API, so they run offline and use no API credits. `GROQ_A
 
 I used [Claude Code](https://claude.com/claude-code) for help in some parts of this project:
 
-- Tests
-- Error handling (`app/errors.py`, the error handling in `app/extract.py`, and the exception handlers in `app/main.py`)
-- Model and validator customisation
-- Setup and debugging: Groq client configuration in `app/llm.py`, pytest configuration, and fixing import errors
-
 I reviewed all AI-assisted code before keeping it. The rest of the code, mainly the parts without comments, I wrote myself.
