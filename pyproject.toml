@@ -1,0 +1,30 @@
+[project]
+name = "vvet-symptom-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Marshal", email = "mutisimarshal@gmaail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.2",
+    "groq>=1.7.0",
+    "httpx>=0.28.1",
+    "httpx2>=2.16.0",
+    "pydantic>=2.14.3",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+vvet-symptom-extractor = "vvet_symptom_extractor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

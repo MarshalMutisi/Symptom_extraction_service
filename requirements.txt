@@ -1,0 +1,7 @@
+FastApi
+Uvicorn
+Pydantic
+python-dotenv
+Groq
+Pytest
+HTTPX
